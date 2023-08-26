@@ -1,0 +1,40 @@
+.button {
+	cursor: pointer;
+
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+}
+
+.close {
+	width: 40px;
+	height: 40px;
+
+	color: var(--primary-text-color);
+	background: #FFF;
+	box-shadow: none;
+	
+	span {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	&:hover {
+		background-color: #DBDBDB;
+	}
+	
+}
+
+
+.change {
+	width: 24px;
+	height: 24px;
+	
+	color: var(--primary-text-color);
+	border-radius: 5px;
+	background: #FFF;
+	box-shadow: none;
+	&:hover {
+		background-color: #DBDBDB;
+	}
+}

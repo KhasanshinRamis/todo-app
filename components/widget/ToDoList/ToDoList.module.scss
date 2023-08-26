@@ -1,0 +1,29 @@
+.toDoList {
+	display: grid;
+	grid-template-columns: minmax(300px, 760px);
+	align-content: center;
+		justify-content: center;
+
+	
+	ul {
+		display: grid;
+		background: #FFF;
+		
+		padding: 30px 50px 30px 50px;
+		margin: 20px;
+		box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+	}
+
+	li {
+		display: grid;
+		grid-template-columns: 20px 1fr 20px 20px;
+		align-items: baseline;
+		gap: 10px;
+		list-style: none;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 14px;
+	}
+}

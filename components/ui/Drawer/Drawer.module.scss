@@ -1,0 +1,34 @@
+.drawer {
+	position: fixed;
+	min-height: 100%;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+	padding: 20px;
+	z-index: 2;
+}
+
+.drawerHeader {
+	display: grid;
+	grid-template-columns: 1fr 40px;
+	gap: 20px;
+	align-items: baseline;
+	margin-bottom: 20px;
+}
+
+
+.drawerHeaderTitle {
+	font-size: 26px;
+	line-height: 24px;
+	font-weight: 700;
+	padding-top: 50px;
+}
+
+.drawerFooter {
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
