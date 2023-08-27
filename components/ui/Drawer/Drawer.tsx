@@ -22,9 +22,10 @@ export const Drawer = ({ ...props }: DrawerProps): JSX.Element => {
 
 	const onUpdate = useCallback(() => {
 		if (!inputValue) return;
-		updateTask(idTask, inputValue);
+		updateTask(idTask as string, inputValue);
 		setInputValue('');
-	}, [inputValue]);
+		}, 
+	[inputValue, updateTask, idTask]);
 
 	return (
 		<div className={styles.drawer} {...props}>
