@@ -4,7 +4,7 @@ import { CreateTaskProps } from './CreateTask.props';
 import styles from './CreateTask.module.scss';
 import { Button, Drawer, BackDrop } from '@/components/ui';
 import { useDrawerStore } from '@/store/useDrawerStore';
-import { motion } from 'framer-motion';
+import { motion, Variants} from 'framer-motion';
 
 
 export const CreateTask = ({ ...props }: CreateTaskProps): JSX.Element => {
@@ -12,7 +12,7 @@ export const CreateTask = ({ ...props }: CreateTaskProps): JSX.Element => {
 
 	const [ isOpened, setIsOpened, setWhichElement] = useDrawerStore((state) => [state.isOpened, state.setIsOpened, state.setWhichElement]);
 
-	const variants = {
+	const variants: Variants = {
 		visible: {
 			position: 'absolute',
 			width: '100%',
